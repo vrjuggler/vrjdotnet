@@ -157,48 +157,40 @@ public class Position
 
 
    // Delegate for the writeObject() callback.
-   protected IntPtr writeObjectAdapter(vpr.ObjectWriter p0)
+   protected void writeObjectAdapter(vpr.ObjectWriter p0)
    {
-      return writeObject(p0).RawObject;
+      writeObject(p0);
    }
 
-   public delegate IntPtr writeObjectDelegate_vpr_ObjectWriter([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectWriterMarshaler))] vpr.ObjectWriter p0);
+   public delegate void writeObjectDelegate_vpr_ObjectWriter([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectWriterMarshaler))] vpr.ObjectWriter p0);
    protected writeObjectDelegate_vpr_ObjectWriter m_writeObjectDelegate_vpr_ObjectWriter;
 
    [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
-   [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                       MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-   private extern static vpr.ReturnStatus gadget_Position_writeObject__vpr_ObjectWriter1(IntPtr obj,
+   private extern static void gadget_Position_writeObject__vpr_ObjectWriter1(IntPtr obj,
 	[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectWriterMarshaler))] vpr.ObjectWriter p0);
 
-   public virtual vpr.ReturnStatus writeObject(vpr.ObjectWriter p0)
+   public virtual void writeObject(vpr.ObjectWriter p0)
    {
-      vpr.ReturnStatus result;
-      result = gadget_Position_writeObject__vpr_ObjectWriter1(mRawObject, p0);
-      return result;
+      gadget_Position_writeObject__vpr_ObjectWriter1(mRawObject, p0);
    }
 
 
    // Delegate for the readObject() callback.
-   protected IntPtr readObjectAdapter(vpr.ObjectReader p0)
+   protected void readObjectAdapter(vpr.ObjectReader p0)
    {
-      return readObject(p0).RawObject;
+      readObject(p0);
    }
 
-   public delegate IntPtr readObjectDelegate_vpr_ObjectReader([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectReaderMarshaler))] vpr.ObjectReader p0);
+   public delegate void readObjectDelegate_vpr_ObjectReader([MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectReaderMarshaler))] vpr.ObjectReader p0);
    protected readObjectDelegate_vpr_ObjectReader m_readObjectDelegate_vpr_ObjectReader;
 
    [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
-   [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                       MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-   private extern static vpr.ReturnStatus gadget_Position_readObject__vpr_ObjectReader1(IntPtr obj,
+   private extern static void gadget_Position_readObject__vpr_ObjectReader1(IntPtr obj,
 	[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectReaderMarshaler))] vpr.ObjectReader p0);
 
-   public virtual vpr.ReturnStatus readObject(vpr.ObjectReader p0)
+   public virtual void readObject(vpr.ObjectReader p0)
    {
-      vpr.ReturnStatus result;
-      result = gadget_Position_readObject__vpr_ObjectReader1(mRawObject, p0);
-      return result;
+      gadget_Position_readObject__vpr_ObjectReader1(mRawObject, p0);
    }
 
 

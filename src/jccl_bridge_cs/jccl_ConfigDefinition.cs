@@ -123,15 +123,6 @@ public sealed class ConfigDefinition
 
    // Start of non-virtual methods.
    [DllImport("jccl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void jccl_ConfigDefinition_assertValid__0(IntPtr obj);
-
-   public  void assertValid()
-   {
-      jccl_ConfigDefinition_assertValid__0(mRawObject);
-   }
-
-
-   [DllImport("jccl_bridge", CharSet = CharSet.Ansi)]
    private extern static string jccl_ConfigDefinition_getName__0(IntPtr obj);
 
    public  string getName()

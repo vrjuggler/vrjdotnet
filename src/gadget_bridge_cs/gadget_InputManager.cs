@@ -70,11 +70,20 @@ public sealed class InputManager
 
 
    [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gadget_InputManager_updateAllData__0(IntPtr obj);
+   private extern static void gadget_InputManager_updateAllDevices__0(IntPtr obj);
 
-   public  void updateAllData()
+   public  void updateAllDevices()
    {
-      gadget_InputManager_updateAllData__0(mRawObject);
+      gadget_InputManager_updateAllDevices__0(mRawObject);
+   }
+
+
+   [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
+   private extern static void gadget_InputManager_updateAllProxies__0(IntPtr obj);
+
+   public  void updateAllProxies()
+   {
+      gadget_InputManager_updateAllProxies__0(mRawObject);
    }
 
 

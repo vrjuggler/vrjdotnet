@@ -31,38 +31,30 @@ extern "C"
 
 
    // Wrapper for virtual method vpr::ObjectReader::beginTag()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectReader_beginTag__std_string1(vpr_ObjectReader_Adapter* self_, char* p0)
+   SHARPPY_API void vpr_ObjectReader_beginTag__std_string1(vpr_ObjectReader_Adapter* self_, char* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->beginTag(p0));
-      return result;
+      self_->beginTag(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectReader::endTag()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectReader_endTag__0(vpr_ObjectReader_Adapter* self_)
+   SHARPPY_API void vpr_ObjectReader_endTag__0(vpr_ObjectReader_Adapter* self_)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->endTag());
-      return result;
+      self_->endTag();
    }
 
 
    // Wrapper for virtual method vpr::ObjectReader::beginAttribute()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectReader_beginAttribute__std_string1(vpr_ObjectReader_Adapter* self_, char* p0)
+   SHARPPY_API void vpr_ObjectReader_beginAttribute__std_string1(vpr_ObjectReader_Adapter* self_, char* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->beginAttribute(p0));
-      return result;
+      self_->beginAttribute(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectReader::endAttribute()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectReader_endAttribute__0(vpr_ObjectReader_Adapter* self_)
+   SHARPPY_API void vpr_ObjectReader_endAttribute__0(vpr_ObjectReader_Adapter* self_)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->endAttribute());
-      return result;
+      self_->endAttribute();
    }
 
 

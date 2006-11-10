@@ -42,12 +42,6 @@ extern "C"
       delete self_;
    }
 
-   // Wrapper for non-virtual method jccl::ConfigDefinition::assertValid()
-   SHARPPY_API void jccl_ConfigDefinition_assertValid__0(boost::shared_ptr< jccl::ConfigDefinition >* self_ptr)
-   {
-      (*self_ptr)->assertValid();
-   }
-
 
    // Wrapper for non-virtual method jccl::ConfigDefinition::getName()
    SHARPPY_API char* jccl_ConfigDefinition_getName__0(boost::shared_ptr< jccl::ConfigDefinition >* self_ptr)

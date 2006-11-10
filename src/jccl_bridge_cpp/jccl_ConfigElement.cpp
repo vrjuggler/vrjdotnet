@@ -51,13 +51,6 @@ extern "C"
    }
 
 
-   // Wrapper for non-virtual method jccl::ConfigElement::assertValid()
-   SHARPPY_API void jccl_ConfigElement_assertValid__0(boost::shared_ptr< jccl::ConfigElement >* self_ptr)
-   {
-      (*self_ptr)->assertValid();
-   }
-
-
    // Wrapper for non-virtual method jccl::ConfigElement::getChildElement()
    SHARPPY_API jccl::ConfigElementPtr* jccl_ConfigElement_getChildElement__std_string1(boost::shared_ptr< jccl::ConfigElement >* self_ptr, const char* p0)
    {

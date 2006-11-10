@@ -17,13 +17,12 @@
 extern "C"
 {
    // Constructor wrapper.
-   SHARPPY_API gadget_Analog_Adapter* gadget_Analog_Analog__0(gadget_Analog_Adapter::writeObject_callback_vpr_ObjectWriter_t cb0, gadget_Analog_Adapter::readObject_callback_vpr_ObjectReader_t cb1, gadget_Analog_Adapter::config_callback_jccl_ConfigElementPtr_t cb2, gadget_Analog_Adapter::getBaseType_callback_t cb3)
+   SHARPPY_API gadget_Analog_Adapter* gadget_Analog_Analog__0(gadget_Analog_Adapter::writeObject_callback_vpr_ObjectWriter_t cb0, gadget_Analog_Adapter::readObject_callback_vpr_ObjectReader_t cb1, gadget_Analog_Adapter::config_callback_jccl_ConfigElementPtr_t cb2)
    {
       gadget_Analog_Adapter* obj = new gadget_Analog_Adapter();
       obj->writeObject_callback_vpr_ObjectWriter = cb0;
       obj->readObject_callback_vpr_ObjectReader = cb1;
       obj->config_callback_jccl_ConfigElementPtr = cb2;
-      obj->getBaseType_callback = cb3;
       return obj;
    }
 
@@ -96,20 +95,16 @@ extern "C"
 
 
    // Wrapper for virtual method gadget::Analog::writeObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Analog_writeObject__vpr_ObjectWriter1(gadget_Analog_Adapter* self_, vpr::ObjectWriter* p0)
+   SHARPPY_API void gadget_Analog_writeObject__vpr_ObjectWriter1(gadget_Analog_Adapter* self_, vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Analog::writeObject(p0));
-      return result;
+      self_->gadget::Analog::writeObject(p0);
    }
 
 
    // Wrapper for virtual method gadget::Analog::readObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Analog_readObject__vpr_ObjectReader1(gadget_Analog_Adapter* self_, vpr::ObjectReader* p0)
+   SHARPPY_API void gadget_Analog_readObject__vpr_ObjectReader1(gadget_Analog_Adapter* self_, vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Analog::readObject(p0));
-      return result;
+      self_->gadget::Analog::readObject(p0);
    }
 
 
@@ -118,17 +113,6 @@ extern "C"
    {
       bool result;
       result = self_->gadget::Analog::config(*p0);
-      return result;
-   }
-
-
-   // Wrapper for virtual method gadget::Analog::getBaseType()
-   SHARPPY_API char* gadget_Analog_getBaseType__0(gadget_Analog_Adapter* self_)
-   {
-      std::string temp_result;
-      char* result;
-      temp_result = self_->gadget::Analog::getBaseType();
-      result = strdup(temp_result.c_str());
       return result;
    }
 

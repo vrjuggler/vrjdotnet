@@ -99,147 +99,147 @@ public abstract class ObjectWriter
 
    // Start of virtual methods.
    // Delegate for the beginTag() callback.
-   protected IntPtr beginTagAdapter(string p0)
+   protected void beginTagAdapter(string p0)
    {
-      return beginTag(p0).RawObject;
+      beginTag(p0);
    }
 
-   public delegate IntPtr beginTagDelegate_std_string(string p0);
+   public delegate void beginTagDelegate_std_string(string p0);
    protected beginTagDelegate_std_string m_beginTagDelegate_std_string;
 
-   public abstract vpr.ReturnStatus beginTag(string p0);
+   public abstract void beginTag(string p0);
 
 
    // Delegate for the endTag() callback.
-   protected IntPtr endTagAdapter()
+   protected void endTagAdapter()
    {
-      return endTag().RawObject;
+      endTag();
    }
 
-   public delegate IntPtr endTagDelegate();
+   public delegate void endTagDelegate();
    protected endTagDelegate m_endTagDelegate;
 
-   public abstract vpr.ReturnStatus endTag();
+   public abstract void endTag();
 
 
    // Delegate for the beginAttribute() callback.
-   protected IntPtr beginAttributeAdapter(string p0)
+   protected void beginAttributeAdapter(string p0)
    {
-      return beginAttribute(p0).RawObject;
+      beginAttribute(p0);
    }
 
-   public delegate IntPtr beginAttributeDelegate_std_string(string p0);
+   public delegate void beginAttributeDelegate_std_string(string p0);
    protected beginAttributeDelegate_std_string m_beginAttributeDelegate_std_string;
 
-   public abstract vpr.ReturnStatus beginAttribute(string p0);
+   public abstract void beginAttribute(string p0);
 
 
    // Delegate for the endAttribute() callback.
-   protected IntPtr endAttributeAdapter()
+   protected void endAttributeAdapter()
    {
-      return endAttribute().RawObject;
+      endAttribute();
    }
 
-   public delegate IntPtr endAttributeDelegate();
+   public delegate void endAttributeDelegate();
    protected endAttributeDelegate m_endAttributeDelegate;
 
-   public abstract vpr.ReturnStatus endAttribute();
+   public abstract void endAttribute();
 
 
    // Delegate for the writeUint8() callback.
-   protected IntPtr writeUint8Adapter(byte p0)
+   protected void writeUint8Adapter(byte p0)
    {
-      return writeUint8(p0).RawObject;
+      writeUint8(p0);
    }
 
-   public delegate IntPtr writeUint8Delegate_vpr_Uint8(byte p0);
+   public delegate void writeUint8Delegate_vpr_Uint8(byte p0);
    protected writeUint8Delegate_vpr_Uint8 m_writeUint8Delegate_vpr_Uint8;
 
-   public abstract vpr.ReturnStatus writeUint8(byte p0);
+   public abstract void writeUint8(byte p0);
 
 
    // Delegate for the writeUint16() callback.
-   protected IntPtr writeUint16Adapter(ushort p0)
+   protected void writeUint16Adapter(ushort p0)
    {
-      return writeUint16(p0).RawObject;
+      writeUint16(p0);
    }
 
-   public delegate IntPtr writeUint16Delegate_vpr_Uint16(ushort p0);
+   public delegate void writeUint16Delegate_vpr_Uint16(ushort p0);
    protected writeUint16Delegate_vpr_Uint16 m_writeUint16Delegate_vpr_Uint16;
 
-   public abstract vpr.ReturnStatus writeUint16(ushort p0);
+   public abstract void writeUint16(ushort p0);
 
 
    // Delegate for the writeUint32() callback.
-   protected IntPtr writeUint32Adapter(uint p0)
+   protected void writeUint32Adapter(uint p0)
    {
-      return writeUint32(p0).RawObject;
+      writeUint32(p0);
    }
 
-   public delegate IntPtr writeUint32Delegate_vpr_Uint32(uint p0);
+   public delegate void writeUint32Delegate_vpr_Uint32(uint p0);
    protected writeUint32Delegate_vpr_Uint32 m_writeUint32Delegate_vpr_Uint32;
 
-   public abstract vpr.ReturnStatus writeUint32(uint p0);
+   public abstract void writeUint32(uint p0);
 
 
    // Delegate for the writeUint64() callback.
-   protected IntPtr writeUint64Adapter(ulong p0)
+   protected void writeUint64Adapter(ulong p0)
    {
-      return writeUint64(p0).RawObject;
+      writeUint64(p0);
    }
 
-   public delegate IntPtr writeUint64Delegate_vpr_Uint64(ulong p0);
+   public delegate void writeUint64Delegate_vpr_Uint64(ulong p0);
    protected writeUint64Delegate_vpr_Uint64 m_writeUint64Delegate_vpr_Uint64;
 
-   public abstract vpr.ReturnStatus writeUint64(ulong p0);
+   public abstract void writeUint64(ulong p0);
 
 
    // Delegate for the writeFloat() callback.
-   protected IntPtr writeFloatAdapter(float p0)
+   protected void writeFloatAdapter(float p0)
    {
-      return writeFloat(p0).RawObject;
+      writeFloat(p0);
    }
 
-   public delegate IntPtr writeFloatDelegate_float(float p0);
+   public delegate void writeFloatDelegate_float(float p0);
    protected writeFloatDelegate_float m_writeFloatDelegate_float;
 
-   public abstract vpr.ReturnStatus writeFloat(float p0);
+   public abstract void writeFloat(float p0);
 
 
    // Delegate for the writeDouble() callback.
-   protected IntPtr writeDoubleAdapter(double p0)
+   protected void writeDoubleAdapter(double p0)
    {
-      return writeDouble(p0).RawObject;
+      writeDouble(p0);
    }
 
-   public delegate IntPtr writeDoubleDelegate_double(double p0);
+   public delegate void writeDoubleDelegate_double(double p0);
    protected writeDoubleDelegate_double m_writeDoubleDelegate_double;
 
-   public abstract vpr.ReturnStatus writeDouble(double p0);
+   public abstract void writeDouble(double p0);
 
 
    // Delegate for the writeString() callback.
-   protected IntPtr writeStringAdapter(string p0)
+   protected void writeStringAdapter(string p0)
    {
-      return writeString(p0).RawObject;
+      writeString(p0);
    }
 
-   public delegate IntPtr writeStringDelegate_std_string(string p0);
+   public delegate void writeStringDelegate_std_string(string p0);
    protected writeStringDelegate_std_string m_writeStringDelegate_std_string;
 
-   public abstract vpr.ReturnStatus writeString(string p0);
+   public abstract void writeString(string p0);
 
 
    // Delegate for the writeBool() callback.
-   protected IntPtr writeBoolAdapter(bool p0)
+   protected void writeBoolAdapter(bool p0)
    {
-      return writeBool(p0).RawObject;
+      writeBool(p0);
    }
 
-   public delegate IntPtr writeBoolDelegate_bool(bool p0);
+   public delegate void writeBoolDelegate_bool(bool p0);
    protected writeBoolDelegate_bool m_writeBoolDelegate_bool;
 
-   public abstract vpr.ReturnStatus writeBool(bool p0);
+   public abstract void writeBool(bool p0);
 
 
    // End of virtual methods.
@@ -265,157 +265,109 @@ public class ObjectWriterMarshaler : ICustomMarshaler
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_beginTag__std_string1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_beginTag__std_string1(IntPtr obj,
 	string p0);
 
-      public override vpr.ReturnStatus beginTag(string p0)
+      public override void beginTag(string p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_beginTag__std_string1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_beginTag__std_string1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_endTag__0(IntPtr obj);
+      private extern static void vpr_ObjectWriter_endTag__0(IntPtr obj);
 
-      public override vpr.ReturnStatus endTag()
+      public override void endTag()
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_endTag__0(mRawObject);
-         return result;
+         vpr_ObjectWriter_endTag__0(mRawObject);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_beginAttribute__std_string1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_beginAttribute__std_string1(IntPtr obj,
 	string p0);
 
-      public override vpr.ReturnStatus beginAttribute(string p0)
+      public override void beginAttribute(string p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_beginAttribute__std_string1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_beginAttribute__std_string1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_endAttribute__0(IntPtr obj);
+      private extern static void vpr_ObjectWriter_endAttribute__0(IntPtr obj);
 
-      public override vpr.ReturnStatus endAttribute()
+      public override void endAttribute()
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_endAttribute__0(mRawObject);
-         return result;
+         vpr_ObjectWriter_endAttribute__0(mRawObject);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeUint8__vpr_Uint81(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeUint8__vpr_Uint81(IntPtr obj,
 	byte p0);
 
-      public override vpr.ReturnStatus writeUint8(byte p0)
+      public override void writeUint8(byte p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeUint8__vpr_Uint81(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeUint8__vpr_Uint81(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeUint16__vpr_Uint161(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeUint16__vpr_Uint161(IntPtr obj,
 	ushort p0);
 
-      public override vpr.ReturnStatus writeUint16(ushort p0)
+      public override void writeUint16(ushort p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeUint16__vpr_Uint161(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeUint16__vpr_Uint161(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeUint32__vpr_Uint321(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeUint32__vpr_Uint321(IntPtr obj,
 	uint p0);
 
-      public override vpr.ReturnStatus writeUint32(uint p0)
+      public override void writeUint32(uint p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeUint32__vpr_Uint321(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeUint32__vpr_Uint321(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeUint64__vpr_Uint641(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeUint64__vpr_Uint641(IntPtr obj,
 	ulong p0);
 
-      public override vpr.ReturnStatus writeUint64(ulong p0)
+      public override void writeUint64(ulong p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeUint64__vpr_Uint641(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeUint64__vpr_Uint641(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeFloat__float1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeFloat__float1(IntPtr obj,
 	float p0);
 
-      public override vpr.ReturnStatus writeFloat(float p0)
+      public override void writeFloat(float p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeFloat__float1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeFloat__float1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeDouble__double1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeDouble__double1(IntPtr obj,
 	double p0);
 
-      public override vpr.ReturnStatus writeDouble(double p0)
+      public override void writeDouble(double p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeDouble__double1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeDouble__double1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeString__std_string1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeString__std_string1(IntPtr obj,
 	string p0);
 
-      public override vpr.ReturnStatus writeString(string p0)
+      public override void writeString(string p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeString__std_string1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeString__std_string1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectWriter_writeBool__bool1(IntPtr obj,
+      private extern static void vpr_ObjectWriter_writeBool__bool1(IntPtr obj,
 	bool p0);
 
-      public override vpr.ReturnStatus writeBool(bool p0)
+      public override void writeBool(bool p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectWriter_writeBool__bool1(mRawObject, p0);
-         return result;
+         vpr_ObjectWriter_writeBool__bool1(mRawObject, p0);
       }
 
    }

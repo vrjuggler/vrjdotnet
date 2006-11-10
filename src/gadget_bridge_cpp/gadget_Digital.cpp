@@ -17,13 +17,12 @@
 extern "C"
 {
    // Constructor wrapper.
-   SHARPPY_API gadget_Digital_Adapter* gadget_Digital_Digital__0(gadget_Digital_Adapter::config_callback_jccl_ConfigElementPtr_t cb0, gadget_Digital_Adapter::getBaseType_callback_t cb1, gadget_Digital_Adapter::writeObject_callback_vpr_ObjectWriter_t cb2, gadget_Digital_Adapter::readObject_callback_vpr_ObjectReader_t cb3)
+   SHARPPY_API gadget_Digital_Adapter* gadget_Digital_Digital__0(gadget_Digital_Adapter::config_callback_jccl_ConfigElementPtr_t cb0, gadget_Digital_Adapter::writeObject_callback_vpr_ObjectWriter_t cb1, gadget_Digital_Adapter::readObject_callback_vpr_ObjectReader_t cb2)
    {
       gadget_Digital_Adapter* obj = new gadget_Digital_Adapter();
       obj->config_callback_jccl_ConfigElementPtr = cb0;
-      obj->getBaseType_callback = cb1;
-      obj->writeObject_callback_vpr_ObjectWriter = cb2;
-      obj->readObject_callback_vpr_ObjectReader = cb3;
+      obj->writeObject_callback_vpr_ObjectWriter = cb1;
+      obj->readObject_callback_vpr_ObjectReader = cb2;
       return obj;
    }
 
@@ -65,32 +64,17 @@ extern "C"
    }
 
 
-   // Wrapper for virtual method gadget::Digital::getBaseType()
-   SHARPPY_API char* gadget_Digital_getBaseType__0(gadget_Digital_Adapter* self_)
-   {
-      std::string temp_result;
-      char* result;
-      temp_result = self_->gadget::Digital::getBaseType();
-      result = strdup(temp_result.c_str());
-      return result;
-   }
-
-
    // Wrapper for virtual method gadget::Digital::writeObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Digital_writeObject__vpr_ObjectWriter1(gadget_Digital_Adapter* self_, vpr::ObjectWriter* p0)
+   SHARPPY_API void gadget_Digital_writeObject__vpr_ObjectWriter1(gadget_Digital_Adapter* self_, vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Digital::writeObject(p0));
-      return result;
+      self_->gadget::Digital::writeObject(p0);
    }
 
 
    // Wrapper for virtual method gadget::Digital::readObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Digital_readObject__vpr_ObjectReader1(gadget_Digital_Adapter* self_, vpr::ObjectReader* p0)
+   SHARPPY_API void gadget_Digital_readObject__vpr_ObjectReader1(gadget_Digital_Adapter* self_, vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Digital::readObject(p0));
-      return result;
+      self_->gadget::Digital::readObject(p0);
    }
 
 

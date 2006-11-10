@@ -31,110 +31,86 @@ extern "C"
 
 
    // Wrapper for virtual method vpr::ObjectWriter::beginTag()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_beginTag__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
+   SHARPPY_API void vpr_ObjectWriter_beginTag__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->beginTag(p0));
-      return result;
+      self_->beginTag(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::endTag()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_endTag__0(vpr_ObjectWriter_Adapter* self_)
+   SHARPPY_API void vpr_ObjectWriter_endTag__0(vpr_ObjectWriter_Adapter* self_)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->endTag());
-      return result;
+      self_->endTag();
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::beginAttribute()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_beginAttribute__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
+   SHARPPY_API void vpr_ObjectWriter_beginAttribute__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->beginAttribute(p0));
-      return result;
+      self_->beginAttribute(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::endAttribute()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_endAttribute__0(vpr_ObjectWriter_Adapter* self_)
+   SHARPPY_API void vpr_ObjectWriter_endAttribute__0(vpr_ObjectWriter_Adapter* self_)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->endAttribute());
-      return result;
+      self_->endAttribute();
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeUint8()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeUint8__vpr_Uint81(vpr_ObjectWriter_Adapter* self_, vpr::Uint8 p0)
+   SHARPPY_API void vpr_ObjectWriter_writeUint8__vpr_Uint81(vpr_ObjectWriter_Adapter* self_, vpr::Uint8 p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeUint8(p0));
-      return result;
+      self_->writeUint8(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeUint16()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeUint16__vpr_Uint161(vpr_ObjectWriter_Adapter* self_, vpr::Uint16 p0)
+   SHARPPY_API void vpr_ObjectWriter_writeUint16__vpr_Uint161(vpr_ObjectWriter_Adapter* self_, vpr::Uint16 p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeUint16(p0));
-      return result;
+      self_->writeUint16(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeUint32()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeUint32__vpr_Uint321(vpr_ObjectWriter_Adapter* self_, vpr::Uint32 p0)
+   SHARPPY_API void vpr_ObjectWriter_writeUint32__vpr_Uint321(vpr_ObjectWriter_Adapter* self_, vpr::Uint32 p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeUint32(p0));
-      return result;
+      self_->writeUint32(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeUint64()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeUint64__vpr_Uint641(vpr_ObjectWriter_Adapter* self_, vpr::Uint64 p0)
+   SHARPPY_API void vpr_ObjectWriter_writeUint64__vpr_Uint641(vpr_ObjectWriter_Adapter* self_, vpr::Uint64 p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeUint64(p0));
-      return result;
+      self_->writeUint64(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeFloat()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeFloat__float1(vpr_ObjectWriter_Adapter* self_, float p0)
+   SHARPPY_API void vpr_ObjectWriter_writeFloat__float1(vpr_ObjectWriter_Adapter* self_, float p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeFloat(p0));
-      return result;
+      self_->writeFloat(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeDouble()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeDouble__double1(vpr_ObjectWriter_Adapter* self_, double p0)
+   SHARPPY_API void vpr_ObjectWriter_writeDouble__double1(vpr_ObjectWriter_Adapter* self_, double p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeDouble(p0));
-      return result;
+      self_->writeDouble(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeString()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeString__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
+   SHARPPY_API void vpr_ObjectWriter_writeString__std_string1(vpr_ObjectWriter_Adapter* self_, char* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeString(p0));
-      return result;
+      self_->writeString(p0);
    }
 
 
    // Wrapper for virtual method vpr::ObjectWriter::writeBool()
-   SHARPPY_API vpr::ReturnStatus* vpr_ObjectWriter_writeBool__bool1(vpr_ObjectWriter_Adapter* self_, bool p0)
+   SHARPPY_API void vpr_ObjectWriter_writeBool__bool1(vpr_ObjectWriter_Adapter* self_, bool p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeBool(p0));
-      return result;
+      self_->writeBool(p0);
    }
 
 

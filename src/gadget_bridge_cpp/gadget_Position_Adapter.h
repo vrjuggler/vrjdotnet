@@ -36,34 +36,22 @@ public:
       return result;
    }
 
-   typedef char* (*getBaseType_callback_t)();
-   getBaseType_callback_t getBaseType_callback;
-
-   /// Override for virtual function gadget::Position::getBaseType.
-   virtual std::string getBaseType()
-   {
-      std::string result = getBaseType_callback();
-      return result;
-   }
-
-   typedef vpr::ReturnStatus* (*writeObject_callback_vpr_ObjectWriter_t)(vpr::ObjectWriter*);
+   typedef void (*writeObject_callback_vpr_ObjectWriter_t)(vpr::ObjectWriter*);
    writeObject_callback_vpr_ObjectWriter_t writeObject_callback_vpr_ObjectWriter;
 
    /// Override for virtual function gadget::Position::writeObject.
-   virtual vpr::ReturnStatus writeObject(vpr::ObjectWriter* p0)
+   virtual void writeObject(vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus result = *(writeObject_callback_vpr_ObjectWriter(p0));
-      return result;
+      writeObject_callback_vpr_ObjectWriter(p0);
    }
 
-   typedef vpr::ReturnStatus* (*readObject_callback_vpr_ObjectReader_t)(vpr::ObjectReader*);
+   typedef void (*readObject_callback_vpr_ObjectReader_t)(vpr::ObjectReader*);
    readObject_callback_vpr_ObjectReader_t readObject_callback_vpr_ObjectReader;
 
    /// Override for virtual function gadget::Position::readObject.
-   virtual vpr::ReturnStatus readObject(vpr::ObjectReader* p0)
+   virtual void readObject(vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus result = *(readObject_callback_vpr_ObjectReader(p0));
-      return result;
+      readObject_callback_vpr_ObjectReader(p0);
    }
 
 }; // class gadget_Position_Adapter

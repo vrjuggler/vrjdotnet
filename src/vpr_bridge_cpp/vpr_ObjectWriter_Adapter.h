@@ -21,130 +21,118 @@ public:
    virtual ~vpr_ObjectWriter_Adapter()
    {;}
 
-   typedef vpr::ReturnStatus* (*beginTag_callback_std_string_t)(char*);
+   typedef void (*beginTag_callback_std_string_t)(char*);
    beginTag_callback_std_string_t beginTag_callback_std_string;
 
    /// Override for virtual function vpr::ObjectWriter::beginTag.
-   virtual vpr::ReturnStatus beginTag(std::string p0)
+   virtual void beginTag(std::string p0)
    {
       char* marshal_p0 = strdup(p0.c_str());
-      vpr::ReturnStatus result = *(beginTag_callback_std_string(marshal_p0));
+      beginTag_callback_std_string(marshal_p0);
       free(marshal_p0);
-      return result;
    }
 
-   typedef vpr::ReturnStatus* (*endTag_callback_t)();
+   typedef void (*endTag_callback_t)();
    endTag_callback_t endTag_callback;
 
    /// Override for virtual function vpr::ObjectWriter::endTag.
-   virtual vpr::ReturnStatus endTag()
+   virtual void endTag()
    {
-      vpr::ReturnStatus result = *(endTag_callback());
-      return result;
+      endTag_callback();
    }
 
-   typedef vpr::ReturnStatus* (*beginAttribute_callback_std_string_t)(char*);
+   typedef void (*beginAttribute_callback_std_string_t)(char*);
    beginAttribute_callback_std_string_t beginAttribute_callback_std_string;
 
    /// Override for virtual function vpr::ObjectWriter::beginAttribute.
-   virtual vpr::ReturnStatus beginAttribute(std::string p0)
+   virtual void beginAttribute(std::string p0)
    {
       char* marshal_p0 = strdup(p0.c_str());
-      vpr::ReturnStatus result = *(beginAttribute_callback_std_string(marshal_p0));
+      beginAttribute_callback_std_string(marshal_p0);
       free(marshal_p0);
-      return result;
    }
 
-   typedef vpr::ReturnStatus* (*endAttribute_callback_t)();
+   typedef void (*endAttribute_callback_t)();
    endAttribute_callback_t endAttribute_callback;
 
    /// Override for virtual function vpr::ObjectWriter::endAttribute.
-   virtual vpr::ReturnStatus endAttribute()
+   virtual void endAttribute()
    {
-      vpr::ReturnStatus result = *(endAttribute_callback());
-      return result;
+      endAttribute_callback();
    }
 
-   typedef vpr::ReturnStatus* (*writeUint8_callback_vpr_Uint8_t)(vpr::Uint8);
+   typedef void (*writeUint8_callback_vpr_Uint8_t)(vpr::Uint8);
    writeUint8_callback_vpr_Uint8_t writeUint8_callback_vpr_Uint8;
 
    /// Override for virtual function vpr::ObjectWriter::writeUint8.
-   virtual vpr::ReturnStatus writeUint8(vpr::Uint8 p0)
+   virtual void writeUint8(vpr::Uint8 p0)
    {
-      vpr::ReturnStatus result = *(writeUint8_callback_vpr_Uint8(p0));
-      return result;
+      writeUint8_callback_vpr_Uint8(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeUint16_callback_vpr_Uint16_t)(vpr::Uint16);
+   typedef void (*writeUint16_callback_vpr_Uint16_t)(vpr::Uint16);
    writeUint16_callback_vpr_Uint16_t writeUint16_callback_vpr_Uint16;
 
    /// Override for virtual function vpr::ObjectWriter::writeUint16.
-   virtual vpr::ReturnStatus writeUint16(vpr::Uint16 p0)
+   virtual void writeUint16(vpr::Uint16 p0)
    {
-      vpr::ReturnStatus result = *(writeUint16_callback_vpr_Uint16(p0));
-      return result;
+      writeUint16_callback_vpr_Uint16(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeUint32_callback_vpr_Uint32_t)(vpr::Uint32);
+   typedef void (*writeUint32_callback_vpr_Uint32_t)(vpr::Uint32);
    writeUint32_callback_vpr_Uint32_t writeUint32_callback_vpr_Uint32;
 
    /// Override for virtual function vpr::ObjectWriter::writeUint32.
-   virtual vpr::ReturnStatus writeUint32(vpr::Uint32 p0)
+   virtual void writeUint32(vpr::Uint32 p0)
    {
-      vpr::ReturnStatus result = *(writeUint32_callback_vpr_Uint32(p0));
-      return result;
+      writeUint32_callback_vpr_Uint32(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeUint64_callback_vpr_Uint64_t)(vpr::Uint64);
+   typedef void (*writeUint64_callback_vpr_Uint64_t)(vpr::Uint64);
    writeUint64_callback_vpr_Uint64_t writeUint64_callback_vpr_Uint64;
 
    /// Override for virtual function vpr::ObjectWriter::writeUint64.
-   virtual vpr::ReturnStatus writeUint64(vpr::Uint64 p0)
+   virtual void writeUint64(vpr::Uint64 p0)
    {
-      vpr::ReturnStatus result = *(writeUint64_callback_vpr_Uint64(p0));
-      return result;
+      writeUint64_callback_vpr_Uint64(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeFloat_callback_float_t)(float);
+   typedef void (*writeFloat_callback_float_t)(float);
    writeFloat_callback_float_t writeFloat_callback_float;
 
    /// Override for virtual function vpr::ObjectWriter::writeFloat.
-   virtual vpr::ReturnStatus writeFloat(float p0)
+   virtual void writeFloat(float p0)
    {
-      vpr::ReturnStatus result = *(writeFloat_callback_float(p0));
-      return result;
+      writeFloat_callback_float(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeDouble_callback_double_t)(double);
+   typedef void (*writeDouble_callback_double_t)(double);
    writeDouble_callback_double_t writeDouble_callback_double;
 
    /// Override for virtual function vpr::ObjectWriter::writeDouble.
-   virtual vpr::ReturnStatus writeDouble(double p0)
+   virtual void writeDouble(double p0)
    {
-      vpr::ReturnStatus result = *(writeDouble_callback_double(p0));
-      return result;
+      writeDouble_callback_double(p0);
    }
 
-   typedef vpr::ReturnStatus* (*writeString_callback_std_string_t)(char*);
+   typedef void (*writeString_callback_std_string_t)(char*);
    writeString_callback_std_string_t writeString_callback_std_string;
 
    /// Override for virtual function vpr::ObjectWriter::writeString.
-   virtual vpr::ReturnStatus writeString(std::string p0)
+   virtual void writeString(std::string p0)
    {
       char* marshal_p0 = strdup(p0.c_str());
-      vpr::ReturnStatus result = *(writeString_callback_std_string(marshal_p0));
+      writeString_callback_std_string(marshal_p0);
       free(marshal_p0);
-      return result;
    }
 
-   typedef vpr::ReturnStatus* (*writeBool_callback_bool_t)(bool);
+   typedef void (*writeBool_callback_bool_t)(bool);
    writeBool_callback_bool_t writeBool_callback_bool;
 
    /// Override for virtual function vpr::ObjectWriter::writeBool.
-   virtual vpr::ReturnStatus writeBool(bool p0)
+   virtual void writeBool(bool p0)
    {
-      vpr::ReturnStatus result = *(writeBool_callback_bool(p0));
-      return result;
+      writeBool_callback_bool(p0);
    }
 
 }; // class vpr_ObjectWriter_Adapter

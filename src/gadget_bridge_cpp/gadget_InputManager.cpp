@@ -34,9 +34,16 @@ extern "C"
 
 
    // Wrapper for non-virtual method gadget::InputManager::updateAllData()
-   SHARPPY_API void gadget_InputManager_updateAllData__0(gadget::InputManager* self_)
+   SHARPPY_API void gadget_InputManager_updateAllDevices__0(gadget::InputManager* self_)
    {
-      self_->updateAllData();
+      self_->updateAllDevices();
+   }
+
+
+   // Wrapper for non-virtual method gadget::InputManager::updateAllData()
+   SHARPPY_API void gadget_InputManager_updateAllProxies__0(gadget::InputManager* self_)
+   {
+      self_->updateAllProxies();
    }
 
 

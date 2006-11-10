@@ -52,16 +52,16 @@ extern "C"
    }
 
 
-   // Wrapper for non-virtual method gadget::Proxy::stupify()
-   SHARPPY_API void gadget_Proxy_stupify__bool0(gadget_Proxy_Adapter* self_)
+   // Wrapper for non-virtual method gadget::Proxy::stupefy()
+   SHARPPY_API void gadget_Proxy_stupefy__bool0(gadget_Proxy_Adapter* self_)
    {
-      self_->stupify();
+      self_->stupefy();
    }
 
-   // Wrapper for non-virtual method gadget::Proxy::stupify()
-   SHARPPY_API void gadget_Proxy_stupify__bool1(gadget_Proxy_Adapter* self_, bool p0)
+   // Wrapper for non-virtual method gadget::Proxy::stupefy()
+   SHARPPY_API void gadget_Proxy_stupefy__bool1(gadget_Proxy_Adapter* self_, bool p0)
    {
-      self_->stupify(p0);
+      self_->stupefy(p0);
    }
 
 
@@ -99,11 +99,11 @@ extern "C"
    }
 
 
-   // Wrapper for virtual method gadget::Proxy::isStupified()
-   SHARPPY_API bool gadget_Proxy_isStupified__0(gadget_Proxy_Adapter* self_)
+   // Wrapper for virtual method gadget::Proxy::isStupefied()
+   SHARPPY_API bool gadget_Proxy_isStupefied__0(gadget_Proxy_Adapter* self_)
    {
       bool result;
-      result = self_->gadget::Proxy::isStupified();
+      result = self_->gadget::Proxy::isStupefied();
       return result;
    }
 

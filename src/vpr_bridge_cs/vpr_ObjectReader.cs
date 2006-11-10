@@ -110,51 +110,51 @@ public abstract class ObjectReader
 
    // Start of virtual methods.
    // Delegate for the beginTag() callback.
-   protected IntPtr beginTagAdapter(string p0)
+   protected void beginTagAdapter(string p0)
    {
-      return beginTag(p0).RawObject;
+      beginTag(p0);
    }
 
-   public delegate IntPtr beginTagDelegate_std_string(string p0);
+   public delegate void beginTagDelegate_std_string(string p0);
    protected beginTagDelegate_std_string m_beginTagDelegate_std_string;
 
-   public abstract vpr.ReturnStatus beginTag(string p0);
+   public abstract void beginTag(string p0);
 
 
    // Delegate for the endTag() callback.
-   protected IntPtr endTagAdapter()
+   protected void endTagAdapter()
    {
-      return endTag().RawObject;
+      endTag();
    }
 
-   public delegate IntPtr endTagDelegate();
+   public delegate void endTagDelegate();
    protected endTagDelegate m_endTagDelegate;
 
-   public abstract vpr.ReturnStatus endTag();
+   public abstract void endTag();
 
 
    // Delegate for the beginAttribute() callback.
-   protected IntPtr beginAttributeAdapter(string p0)
+   protected void beginAttributeAdapter(string p0)
    {
-      return beginAttribute(p0).RawObject;
+      beginAttribute(p0);
    }
 
-   public delegate IntPtr beginAttributeDelegate_std_string(string p0);
+   public delegate void beginAttributeDelegate_std_string(string p0);
    protected beginAttributeDelegate_std_string m_beginAttributeDelegate_std_string;
 
-   public abstract vpr.ReturnStatus beginAttribute(string p0);
+   public abstract void beginAttribute(string p0);
 
 
    // Delegate for the endAttribute() callback.
-   protected IntPtr endAttributeAdapter()
+   protected void endAttributeAdapter()
    {
-      return endAttribute().RawObject;
+      endAttribute();
    }
 
-   public delegate IntPtr endAttributeDelegate();
+   public delegate void endAttributeDelegate();
    protected endAttributeDelegate m_endAttributeDelegate;
 
-   public abstract vpr.ReturnStatus endAttribute();
+   public abstract void endAttribute();
 
 
    // Delegate for the resetReading() callback.
@@ -369,53 +369,37 @@ public class ObjectReaderMarshaler : ICustomMarshaler
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectReader_beginTag__std_string1(IntPtr obj,
+      private extern static void vpr_ObjectReader_beginTag__std_string1(IntPtr obj,
 	string p0);
 
-      public override vpr.ReturnStatus beginTag(string p0)
+      public override void beginTag(string p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectReader_beginTag__std_string1(mRawObject, p0);
-         return result;
+         vpr_ObjectReader_beginTag__std_string1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectReader_endTag__0(IntPtr obj);
+      private extern static void vpr_ObjectReader_endTag__0(IntPtr obj);
 
-      public override vpr.ReturnStatus endTag()
+      public override void endTag()
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectReader_endTag__0(mRawObject);
-         return result;
+         vpr_ObjectReader_endTag__0(mRawObject);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectReader_beginAttribute__std_string1(IntPtr obj,
+      private extern static void vpr_ObjectReader_beginAttribute__std_string1(IntPtr obj,
 	string p0);
 
-      public override vpr.ReturnStatus beginAttribute(string p0)
+      public override void beginAttribute(string p0)
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectReader_beginAttribute__std_string1(mRawObject, p0);
-         return result;
+         vpr_ObjectReader_beginAttribute__std_string1(mRawObject, p0);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-      [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                          MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-      private extern static vpr.ReturnStatus vpr_ObjectReader_endAttribute__0(IntPtr obj);
+      private extern static void vpr_ObjectReader_endAttribute__0(IntPtr obj);
 
-      public override vpr.ReturnStatus endAttribute()
+      public override void endAttribute()
       {
-         vpr.ReturnStatus result;
-         result = vpr_ObjectReader_endAttribute__0(mRawObject);
-         return result;
+         vpr_ObjectReader_endAttribute__0(mRawObject);
       }
 
       [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]

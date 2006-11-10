@@ -93,20 +93,16 @@ extern "C"
 
 
    // Wrapper for virtual method vpr::GUID::writeObject()
-   SHARPPY_API vpr::ReturnStatus* vpr_GUID_writeObject__vpr_ObjectWriter1(vpr::GUID* self_, vpr::ObjectWriter* p0)
+   SHARPPY_API void vpr_GUID_writeObject__vpr_ObjectWriter1(vpr::GUID* self_, vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeObject(p0));
-      return result;
+      self_->writeObject(p0);
    }
 
 
    // Wrapper for virtual method vpr::GUID::readObject()
-   SHARPPY_API vpr::ReturnStatus* vpr_GUID_readObject__vpr_ObjectReader1(vpr::GUID* self_, vpr::ObjectReader* p0)
+   SHARPPY_API void vpr_GUID_readObject__vpr_ObjectReader1(vpr::GUID* self_, vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->readObject(p0));
-      return result;
+      self_->readObject(p0);
    }
 
 

@@ -22,11 +22,9 @@ extern "C"
    }
 
    // Wrapper for virtual method vpr::WriteableObject::writeObject()
-   SHARPPY_API vpr::ReturnStatus* vpr_WriteableObject_writeObject__vpr_ObjectWriter1(vpr_WriteableObject_Adapter* self_, vpr::ObjectWriter* p0)
+   SHARPPY_API void vpr_WriteableObject_writeObject__vpr_ObjectWriter1(vpr_WriteableObject_Adapter* self_, vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->writeObject(p0));
-      return result;
+      self_->writeObject(p0);
    }
 
 

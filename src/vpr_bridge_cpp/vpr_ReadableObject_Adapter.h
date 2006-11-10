@@ -21,14 +21,13 @@ public:
    virtual ~vpr_ReadableObject_Adapter()
    {;}
 
-   typedef vpr::ReturnStatus* (*readObject_callback_vpr_ObjectReader_t)(vpr::ObjectReader*);
+   typedef void (*readObject_callback_vpr_ObjectReader_t)(vpr::ObjectReader*);
    readObject_callback_vpr_ObjectReader_t readObject_callback_vpr_ObjectReader;
 
    /// Override for virtual function vpr::ReadableObject::readObject.
-   virtual vpr::ReturnStatus readObject(vpr::ObjectReader* p0)
+   virtual void readObject(vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus result = *(readObject_callback_vpr_ObjectReader(p0));
-      return result;
+      readObject_callback_vpr_ObjectReader(p0);
    }
 
 }; // class vpr_ReadableObject_Adapter

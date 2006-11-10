@@ -110,20 +110,20 @@ public abstract class Proxy
 
 
    [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gadget_Proxy_stupify__bool0(IntPtr obj);
+   private extern static void gadget_Proxy_stupefy__bool0(IntPtr obj);
 
-   public  void stupify()
+   public  void stupefy()
    {
-      gadget_Proxy_stupify__bool0(mRawObject);
+      gadget_Proxy_stupefy__bool0(mRawObject);
    }
 
    [DllImport("gadget_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gadget_Proxy_stupify__bool1(IntPtr obj,
+   private extern static void gadget_Proxy_stupefy__bool1(IntPtr obj,
 	bool p0);
 
-   public  void stupify(bool p0)
+   public  void stupefy(bool p0)
    {
-      gadget_Proxy_stupify__bool1(mRawObject, p0);
+      gadget_Proxy_stupefy__bool1(mRawObject, p0);
    }
 
 

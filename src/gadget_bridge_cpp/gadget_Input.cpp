@@ -17,7 +17,7 @@
 extern "C"
 {
    // Constructor wrapper.
-   SHARPPY_API gadget_Input_Adapter* gadget_Input_Input__0(gadget_Input_Adapter::config_callback_jccl_ConfigElementPtr_t cb0, gadget_Input_Adapter::sample_callback_t cb1, gadget_Input_Adapter::startSampling_callback_t cb2, gadget_Input_Adapter::stopSampling_callback_t cb3, gadget_Input_Adapter::updateData_callback_t cb4, gadget_Input_Adapter::getBaseType_callback_t cb5, gadget_Input_Adapter::writeObject_callback_vpr_ObjectWriter_t cb6, gadget_Input_Adapter::readObject_callback_vpr_ObjectReader_t cb7, gadget_Input_Adapter::destroy_callback_t cb8)
+   SHARPPY_API gadget_Input_Adapter* gadget_Input_Input__0(gadget_Input_Adapter::config_callback_jccl_ConfigElementPtr_t cb0, gadget_Input_Adapter::sample_callback_t cb1, gadget_Input_Adapter::startSampling_callback_t cb2, gadget_Input_Adapter::stopSampling_callback_t cb3, gadget_Input_Adapter::updateData_callback_t cb4, gadget_Input_Adapter::writeObject_callback_vpr_ObjectWriter_t cb5, gadget_Input_Adapter::readObject_callback_vpr_ObjectReader_t cb6, gadget_Input_Adapter::destroy_callback_t cb7)
    {
       gadget_Input_Adapter* obj = new gadget_Input_Adapter();
       obj->config_callback_jccl_ConfigElementPtr = cb0;
@@ -25,10 +25,9 @@ extern "C"
       obj->startSampling_callback = cb2;
       obj->stopSampling_callback = cb3;
       obj->updateData_callback = cb4;
-      obj->getBaseType_callback = cb5;
-      obj->writeObject_callback_vpr_ObjectWriter = cb6;
-      obj->readObject_callback_vpr_ObjectReader = cb7;
-      obj->destroy_callback = cb8;
+      obj->writeObject_callback_vpr_ObjectWriter = cb5;
+      obj->readObject_callback_vpr_ObjectReader = cb6;
+      obj->destroy_callback = cb7;
       return obj;
    }
 
@@ -100,32 +99,17 @@ extern "C"
    }
 
 
-   // Wrapper for virtual method gadget::Input::getBaseType()
-   SHARPPY_API char* gadget_Input_getBaseType__0(gadget_Input_Adapter* self_)
-   {
-      std::string temp_result;
-      char* result;
-      temp_result = self_->gadget::Input::getBaseType();
-      result = strdup(temp_result.c_str());
-      return result;
-   }
-
-
    // Wrapper for virtual method gadget::Input::writeObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Input_writeObject__vpr_ObjectWriter1(gadget_Input_Adapter* self_, vpr::ObjectWriter* p0)
+   SHARPPY_API void gadget_Input_writeObject__vpr_ObjectWriter1(gadget_Input_Adapter* self_, vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Input::writeObject(p0));
-      return result;
+      self_->gadget::Input::writeObject(p0);
    }
 
 
    // Wrapper for virtual method gadget::Input::readObject()
-   SHARPPY_API vpr::ReturnStatus* gadget_Input_readObject__vpr_ObjectReader1(gadget_Input_Adapter* self_, vpr::ObjectReader* p0)
+   SHARPPY_API void gadget_Input_readObject__vpr_ObjectReader1(gadget_Input_Adapter* self_, vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->gadget::Input::readObject(p0));
-      return result;
+      self_->gadget::Input::readObject(p0);
    }
 
 

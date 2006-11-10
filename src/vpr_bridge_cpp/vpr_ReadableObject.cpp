@@ -22,11 +22,9 @@ extern "C"
    }
 
    // Wrapper for virtual method vpr::ReadableObject::readObject()
-   SHARPPY_API vpr::ReturnStatus* vpr_ReadableObject_readObject__vpr_ObjectReader1(vpr_ReadableObject_Adapter* self_, vpr::ObjectReader* p0)
+   SHARPPY_API void vpr_ReadableObject_readObject__vpr_ObjectReader1(vpr_ReadableObject_Adapter* self_, vpr::ObjectReader* p0)
    {
-      vpr::ReturnStatus* result;
-      result = new vpr::ReturnStatus(self_->readObject(p0));
-      return result;
+      self_->readObject(p0);
    }
 
 

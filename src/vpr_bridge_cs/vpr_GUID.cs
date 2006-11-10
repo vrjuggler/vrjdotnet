@@ -212,30 +212,22 @@ public sealed class GUID
 
    // Start of virtual methods.
    [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-   [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                       MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-   private extern static vpr.ReturnStatus vpr_GUID_writeObject__vpr_ObjectWriter1(IntPtr obj,
+   private extern static void vpr_GUID_writeObject__vpr_ObjectWriter1(IntPtr obj,
 	[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectWriterMarshaler))] vpr.ObjectWriter p0);
 
-   public  vpr.ReturnStatus writeObject(vpr.ObjectWriter p0)
+   public  void writeObject(vpr.ObjectWriter p0)
    {
-      vpr.ReturnStatus result;
-      result = vpr_GUID_writeObject__vpr_ObjectWriter1(mRawObject, p0);
-      return result;
+      vpr_GUID_writeObject__vpr_ObjectWriter1(mRawObject, p0);
    }
 
 
    [DllImport("vpr_bridge", CharSet = CharSet.Ansi)]
-   [return : MarshalAs(UnmanagedType.CustomMarshaler,
-                       MarshalTypeRef = typeof(vpr.ReturnStatusMarshaler))]
-   private extern static vpr.ReturnStatus vpr_GUID_readObject__vpr_ObjectReader1(IntPtr obj,
+   private extern static void vpr_GUID_readObject__vpr_ObjectReader1(IntPtr obj,
 	[MarshalAs(UnmanagedType.CustomMarshaler, MarshalTypeRef = typeof(vpr.ObjectReaderMarshaler))] vpr.ObjectReader p0);
 
-   public  vpr.ReturnStatus readObject(vpr.ObjectReader p0)
+   public  void readObject(vpr.ObjectReader p0)
    {
-      vpr.ReturnStatus result;
-      result = vpr_GUID_readObject__vpr_ObjectReader1(mRawObject, p0);
-      return result;
+      vpr_GUID_readObject__vpr_ObjectReader1(mRawObject, p0);
    }
 
 

@@ -148,15 +148,6 @@ public sealed class ConfigElement
 
 
    [DllImport("jccl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void jccl_ConfigElement_assertValid__0(IntPtr obj);
-
-   public  void assertValid()
-   {
-      jccl_ConfigElement_assertValid__0(mRawObject);
-   }
-
-
-   [DllImport("jccl_bridge", CharSet = CharSet.Ansi)]
    [return : MarshalAs(UnmanagedType.CustomMarshaler,
                        MarshalTypeRef = typeof(jccl.ConfigElementMarshaler))]
    private extern static jccl.ConfigElement jccl_ConfigElement_getChildElement__std_string1(IntPtr obj,

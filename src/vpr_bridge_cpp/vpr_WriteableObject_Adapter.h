@@ -21,14 +21,13 @@ public:
    virtual ~vpr_WriteableObject_Adapter()
    {;}
 
-   typedef vpr::ReturnStatus* (*writeObject_callback_vpr_ObjectWriter_t)(vpr::ObjectWriter*);
+   typedef void (*writeObject_callback_vpr_ObjectWriter_t)(vpr::ObjectWriter*);
    writeObject_callback_vpr_ObjectWriter_t writeObject_callback_vpr_ObjectWriter;
 
    /// Override for virtual function vpr::WriteableObject::writeObject.
-   virtual vpr::ReturnStatus writeObject(vpr::ObjectWriter* p0)
+   virtual void writeObject(vpr::ObjectWriter* p0)
    {
-      vpr::ReturnStatus result = *(writeObject_callback_vpr_ObjectWriter(p0));
-      return result;
+      writeObject_callback_vpr_ObjectWriter(p0);
    }
 
 }; // class vpr_WriteableObject_Adapter

@@ -21,48 +21,44 @@ public:
    virtual ~vpr_ObjectReader_Adapter()
    {;}
 
-   typedef vpr::ReturnStatus* (*beginTag_callback_std_string_t)(char*);
+   typedef void (*beginTag_callback_std_string_t)(char*);
    beginTag_callback_std_string_t beginTag_callback_std_string;
 
    /// Override for virtual function vpr::ObjectReader::beginTag.
-   virtual vpr::ReturnStatus beginTag(std::string p0)
+   virtual void beginTag(std::string p0)
    {
       char* marshal_p0 = strdup(p0.c_str());
-      vpr::ReturnStatus result = *(beginTag_callback_std_string(marshal_p0));
+      beginTag_callback_std_string(marshal_p0);
       free(marshal_p0);
-      return result;
    }
 
-   typedef vpr::ReturnStatus* (*endTag_callback_t)();
+   typedef void (*endTag_callback_t)();
    endTag_callback_t endTag_callback;
 
    /// Override for virtual function vpr::ObjectReader::endTag.
-   virtual vpr::ReturnStatus endTag()
+   virtual void endTag()
    {
-      vpr::ReturnStatus result = *(endTag_callback());
-      return result;
+      endTag_callback();
    }
 
-   typedef vpr::ReturnStatus* (*beginAttribute_callback_std_string_t)(char*);
+   typedef void (*beginAttribute_callback_std_string_t)(char*);
    beginAttribute_callback_std_string_t beginAttribute_callback_std_string;
 
    /// Override for virtual function vpr::ObjectReader::beginAttribute.
-   virtual vpr::ReturnStatus beginAttribute(std::string p0)
+   virtual void beginAttribute(std::string p0)
    {
       char* marshal_p0 = strdup(p0.c_str());
-      vpr::ReturnStatus result = *(beginAttribute_callback_std_string(marshal_p0));
+      beginAttribute_callback_std_string(marshal_p0);
       free(marshal_p0);
-      return result;
    }
 
-   typedef vpr::ReturnStatus* (*endAttribute_callback_t)();
+   typedef void (*endAttribute_callback_t)();
    endAttribute_callback_t endAttribute_callback;
 
    /// Override for virtual function vpr::ObjectReader::endAttribute.
-   virtual vpr::ReturnStatus endAttribute()
+   virtual void endAttribute()
    {
-      vpr::ReturnStatus result = *(endAttribute_callback());
-      return result;
+      endAttribute_callback();
    }
 
    typedef void (*resetReading_callback_t)();
