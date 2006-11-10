@@ -20,8 +20,8 @@ namespace gmtl
    typedef gmtl::VecBase<float, 4> VecBase4f;
    typedef gmtl::VecBase<double, 4> VecBase4d;
 
-   template float dot(const gmtl::Vec3f&, const gmtl::Vec3f&);
-   template float dot(const gmtl::Vec4f&, const gmtl::Vec4f&);
+   template float dot(const gmtl::VecBase3f&, const gmtl::VecBase3f&);
+   template float dot(const gmtl::VecBase4f&, const gmtl::VecBase4f&);
 
    template float length(const gmtl::Vec3f&);
    template float length(const gmtl::Vec4f&);
