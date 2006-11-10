@@ -21,7 +21,7 @@
 				AdditionalOptions="/Zm800"
 				Optimization="0"
 				AdditionalIncludeDirectories=".;..;&quot;$(VJ_DEPS_DIR)\include&quot;;&quot;$(VJ_BASE_DIR)\include&quot;"
-				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;_USRDLL"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK;WIN32;_DEBUG;_CONSOLE;_USRDLL"
 				MinimalRebuild="FALSE"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -36,7 +36,7 @@
 				Name="VCCustomBuildTool"/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="vpr_d.lib libnspr4.lib libplc4.lib $(NOINHERIT)"
+				AdditionalDependencies="libnspr4.lib libplc4.lib $(NOINHERIT)"
 				OutputFile="$(OutDir)/vpr_bridge.dll"
 				Version="1.1.149"
 				LinkIncremental="2"
@@ -79,7 +79,7 @@
 				InlineFunctionExpansion="1"
 				OmitFramePointers="TRUE"
 				AdditionalIncludeDirectories=".;..;&quot;$(VJ_DEPS_DIR)\include&quot;;&quot;$(VJ_BASE_DIR)\include&quot;"
-				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE;_USRDLL;_OPT"
+				PreprocessorDefinitions="BOOST_ALL_DYN_LINK;WIN32;NDEBUG;_CONSOLE;_USRDLL;_OPT"
 				StringPooling="TRUE"
 				MinimalRebuild="FALSE"
 				RuntimeLibrary="2"
@@ -95,7 +95,7 @@
 				Name="VCCustomBuildTool"/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="vpr.lib libnspr4.lib libplc4.lib $(NOINHERIT)"
+				AdditionalDependencies="libnspr4.lib libplc4.lib $(NOINHERIT)"
 				OutputFile="$(OutDir)/vpr_bridge.dll"
 				Version="1.1.149"
 				LinkIncremental="1"
