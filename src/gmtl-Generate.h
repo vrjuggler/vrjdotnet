@@ -94,8 +94,8 @@ namespace gmtl
    template gmtl::Matrix44d& setPerspective(gmtl::Matrix44d&, double,
                                             double, double, double);
 
-   template gmtl::Matrix44f& setTrans(gmtl::Matrix44f&, const gmtl::Vec3f&);
-   template gmtl::Matrix44d& setTrans(gmtl::Matrix44d&, const gmtl::Vec3d&);
+   template gmtl::Matrix44f& setTrans(gmtl::Matrix44f&, const gmtl::VecBase3f&);
+   template gmtl::Matrix44d& setTrans(gmtl::Matrix44d&, const gmtl::VecBase3d&);
 
    template gmtl::Matrix44f& setScale(gmtl::Matrix44f&, const gmtl::Vec3f&);
    template gmtl::Matrix44d& setScale(gmtl::Matrix44d&, const gmtl::Vec3d&);
