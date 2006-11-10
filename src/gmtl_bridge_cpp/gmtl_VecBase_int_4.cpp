@@ -31,20 +31,6 @@ extern "C"
    }
 
    // Constructor wrapper.
-   SHARPPY_API gmtl::VecBase<int,4>* gmtl_VecBase_int_4__VecBase__int_int2(const int p0, const int p1)
-   {
-      gmtl::VecBase<int,4>* obj = new gmtl::VecBase<int,4>(p0, p1);
-      return obj;
-   }
-
-   // Constructor wrapper.
-   SHARPPY_API gmtl::VecBase<int,4>* gmtl_VecBase_int_4__VecBase__int_int_int3(const int p0, const int p1, const int p2)
-   {
-      gmtl::VecBase<int,4>* obj = new gmtl::VecBase<int,4>(p0, p1, p2);
-      return obj;
-   }
-
-   // Constructor wrapper.
    SHARPPY_API gmtl::VecBase<int,4>* gmtl_VecBase_int_4__VecBase__int_int_int_int4(const int p0, const int p1, const int p2, const int p3)
    {
       gmtl::VecBase<int,4>* obj = new gmtl::VecBase<int,4>(p0, p1, p2, p3);

@@ -39,23 +39,9 @@ extern "C"
    }
 
    // Constructor wrapper.
-   SHARPPY_API gmtl::Vec3f* gmtl_Vec_float_3__Vec__float_float2(const float p0, const float p1)
-   {
-      gmtl::Vec3f* obj = new gmtl::Vec3f(p0, p1);
-      return obj;
-   }
-
-   // Constructor wrapper.
    SHARPPY_API gmtl::Vec3f* gmtl_Vec_float_3__Vec__float_float_float3(const float p0, const float p1, const float p2)
    {
       gmtl::Vec3f* obj = new gmtl::Vec3f(p0, p1, p2);
-      return obj;
-   }
-
-   // Constructor wrapper.
-   SHARPPY_API gmtl::Vec3f* gmtl_Vec_float_3__Vec__float_float_float_float4(const float p0, const float p1, const float p2, const float p3)
-   {
-      gmtl::Vec3f* obj = new gmtl::Vec3f(p0, p1, p2, p3);
       return obj;
    }
 

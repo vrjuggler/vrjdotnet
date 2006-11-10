@@ -81,34 +81,6 @@ public sealed class Matrix33f
 
    // Start of non-virtual methods.
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_Matrix_float_3_3__set__float_float_float_float4(IntPtr obj,
-	float p0,
-	float p1,
-	float p2,
-	float p3);
-
-   public  void set(float p0, float p1, float p2, float p3)
-   {
-      gmtl_Matrix_float_3_3__set__float_float_float_float4(mRawObject, p0, p1, p2, p3);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float6(IntPtr obj,
-	float p0,
-	float p1,
-	float p2,
-	float p3,
-	float p4,
-	float p5);
-
-   public  void set(float p0, float p1, float p2, float p3, float p4, float p5)
-   {
-      gmtl_Matrix_float_3_3__set__float_float_float_float_float_float6(mRawObject, p0, p1, p2, p3, p4, p5);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float9(IntPtr obj,
 	float p0,
 	float p1,
@@ -123,52 +95,6 @@ public sealed class Matrix33f
    public  void set(float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8)
    {
       gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float9(mRawObject, p0, p1, p2, p3, p4, p5, p6, p7, p8);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float12(IntPtr obj,
-	float p0,
-	float p1,
-	float p2,
-	float p3,
-	float p4,
-	float p5,
-	float p6,
-	float p7,
-	float p8,
-	float p9,
-	float p10,
-	float p11);
-
-   public  void set(float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11)
-   {
-      gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float12(mRawObject, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float_float_float_float_float16(IntPtr obj,
-	float p0,
-	float p1,
-	float p2,
-	float p3,
-	float p4,
-	float p5,
-	float p6,
-	float p7,
-	float p8,
-	float p9,
-	float p10,
-	float p11,
-	float p12,
-	float p13,
-	float p14,
-	float p15);
-
-   public  void set(float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11, float p12, float p13, float p14, float p15)
-   {
-      gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float_float_float_float_float16(mRawObject, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15);
    }
 
 

@@ -39,20 +39,6 @@ extern "C"
    }
 
    // Constructor wrapper.
-   SHARPPY_API gmtl::Point4d* gmtl_Point_double_4__Point__double_double2(const double p0, const double p1)
-   {
-      gmtl::Point4d* obj = new gmtl::Point4d(p0, p1);
-      return obj;
-   }
-
-   // Constructor wrapper.
-   SHARPPY_API gmtl::Point4d* gmtl_Point_double_4__Point__double_double_double3(const double p0, const double p1, const double p2)
-   {
-      gmtl::Point4d* obj = new gmtl::Point4d(p0, p1, p2);
-      return obj;
-   }
-
-   // Constructor wrapper.
    SHARPPY_API gmtl::Point4d* gmtl_Point_double_4__Point__double_double_double_double4(const double p0, const double p1, const double p2, const double p3)
    {
       gmtl::Point4d* obj = new gmtl::Point4d(p0, p1, p2, p3);

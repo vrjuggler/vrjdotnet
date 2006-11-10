@@ -55,26 +55,6 @@ public sealed class Point4d
    }
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_double_4__Point__double_double2(double p0, double p1);
-
-   public Point4d(double p0, double p1)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_double_4__Point__double_double2(p0, p1);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_double_4__Point__double_double_double3(double p0, double p1, double p2);
-
-   public Point4d(double p0, double p1, double p2)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_double_4__Point__double_double_double3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static IntPtr gmtl_Point_double_4__Point__double_double_double_double4(double p0, double p1, double p2, double p3);
 
    public Point4d(double p0, double p1, double p2, double p3)

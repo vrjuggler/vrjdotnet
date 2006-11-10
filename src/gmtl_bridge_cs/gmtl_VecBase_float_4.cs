@@ -60,24 +60,6 @@ public class VecBase_float_4
    }
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_float_4__VecBase__float_float2(float p0, float p1);
-
-   public VecBase_float_4(float p0, float p1)
-   {
-      mRawObject   = gmtl_VecBase_float_4__VecBase__float_float2(p0, p1);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_float_4__VecBase__float_float_float3(float p0, float p1, float p2);
-
-   public VecBase_float_4(float p0, float p1, float p2)
-   {
-      mRawObject   = gmtl_VecBase_float_4__VecBase__float_float_float3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static IntPtr gmtl_VecBase_float_4__VecBase__float_float_float_float4(float p0, float p1, float p2, float p3);
 
    public VecBase_float_4(float p0, float p1, float p2, float p3)
@@ -119,39 +101,6 @@ public class VecBase_float_4
    public  void set(float p0)
    {
       gmtl_VecBase_float_4__set__float1(mRawObject, p0);
-   }
-
-/*
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_4__set__float1(IntPtr obj,
-	float p0);
-
-   public  void set(float p0)
-   {
-      gmtl_VecBase_float_4__set__float1(mRawObject, p0);
-   }
-*/
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_4__set__float_float2(IntPtr obj,
-	float p0,
-	float p1);
-
-   public  void set(float p0, float p1)
-   {
-      gmtl_VecBase_float_4__set__float_float2(mRawObject, p0, p1);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_4__set__float_float_float3(IntPtr obj,
-	float p0,
-	float p1,
-	float p2);
-
-   public  void set(float p0, float p1, float p2)
-   {
-      gmtl_VecBase_float_4__set__float_float_float3(mRawObject, p0, p1, p2);
    }
 
 

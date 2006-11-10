@@ -60,24 +60,6 @@ public class VecBase_double_4
    }
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_double_4__VecBase__double_double2(double p0, double p1);
-
-   public VecBase_double_4(double p0, double p1)
-   {
-      mRawObject   = gmtl_VecBase_double_4__VecBase__double_double2(p0, p1);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_double_4__VecBase__double_double_double3(double p0, double p1, double p2);
-
-   public VecBase_double_4(double p0, double p1, double p2)
-   {
-      mRawObject   = gmtl_VecBase_double_4__VecBase__double_double_double3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static IntPtr gmtl_VecBase_double_4__VecBase__double_double_double_double4(double p0, double p1, double p2, double p3);
 
    public VecBase_double_4(double p0, double p1, double p2, double p3)
@@ -119,39 +101,6 @@ public class VecBase_double_4
    public  void set(double p0)
    {
       gmtl_VecBase_double_4__set__double1(mRawObject, p0);
-   }
-
-/*
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_double_4__set__double1(IntPtr obj,
-	double p0);
-
-   public  void set(double p0)
-   {
-      gmtl_VecBase_double_4__set__double1(mRawObject, p0);
-   }
-*/
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_double_4__set__double_double2(IntPtr obj,
-	double p0,
-	double p1);
-
-   public  void set(double p0, double p1)
-   {
-      gmtl_VecBase_double_4__set__double_double2(mRawObject, p0, p1);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_double_4__set__double_double_double3(IntPtr obj,
-	double p0,
-	double p1,
-	double p2);
-
-   public  void set(double p0, double p1, double p2)
-   {
-      gmtl_VecBase_double_4__set__double_double_double3(mRawObject, p0, p1, p2);
    }
 
 

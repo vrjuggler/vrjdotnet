@@ -55,26 +55,6 @@ public sealed class Vec4i
    }
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Vec_int_4__Vec__int_int2(int p0, int p1);
-
-   public Vec4i(int p0, int p1)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Vec_int_4__Vec__int_int2(p0, p1);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Vec_int_4__Vec__int_int_int3(int p0, int p1, int p2);
-
-   public Vec4i(int p0, int p1, int p2)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Vec_int_4__Vec__int_int_int3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static IntPtr gmtl_Vec_int_4__Vec__int_int_int_int4(int p0, int p1, int p2, int p3);
 
    public Vec4i(int p0, int p1, int p2, int p3)

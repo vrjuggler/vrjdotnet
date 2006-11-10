@@ -64,26 +64,6 @@ public sealed class Point2i
       mWeOwnMemory = true;
    }
 
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_int_2__Point__int_int_int3(int p0, int p1, int p2);
-
-   public Point2i(int p0, int p1, int p2)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_int_2__Point__int_int_int3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_int_2__Point__int_int_int_int4(int p0, int p1, int p2, int p3);
-
-   public Point2i(int p0, int p1, int p2, int p3)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_int_2__Point__int_int_int_int4(p0, p1, p2, p3);
-      mWeOwnMemory = true;
-   }
-
    // Internal constructor needed for marshaling purposes.
    internal Point2i(IntPtr instPtr, bool ownMemory)
       : base(new NoInitTag())

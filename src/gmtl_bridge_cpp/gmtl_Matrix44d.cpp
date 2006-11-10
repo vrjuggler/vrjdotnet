@@ -35,33 +35,6 @@ extern "C"
       delete self_;
    }
 
-   // Wrapper for non-virtual method gmtl::Matrix<double,4,4>::set()
-   SHARPPY_API void gmtl_Matrix_double_4_4__set__double_double_double_double4(gmtl::Matrix44d* self_, double p0, double p1, double p2, double p3)
-   {
-      self_->set(p0, p1, p2, p3);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<double,4,4>::set()
-   SHARPPY_API void gmtl_Matrix_double_4_4__set__double_double_double_double_double_double6(gmtl::Matrix44d* self_, double p0, double p1, double p2, double p3, double p4, double p5)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<double,4,4>::set()
-   SHARPPY_API void gmtl_Matrix_double_4_4__set__double_double_double_double_double_double_double_double_double9(gmtl::Matrix44d* self_, double p0, double p1, double p2, double p3, double p4, double p5, double p6, double p7, double p8)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5, p6, p7, p8);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<double,4,4>::set()
-   SHARPPY_API void gmtl_Matrix_double_4_4__set__double_double_double_double_double_double_double_double_double_double_double_double12(gmtl::Matrix44d* self_, double p0, double p1, double p2, double p3, double p4, double p5, double p6, double p7, double p8, double p9, double p10, double p11)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11);
-   }
-
 
    // Wrapper for non-virtual method gmtl::Matrix<double,4,4>::set()
    SHARPPY_API void gmtl_Matrix_double_4_4__set__double_double_double_double_double_double_double_double_double_double_double_double_double_double_double_double16(gmtl::Matrix44d* self_, double p0, double p1, double p2, double p3, double p4, double p5, double p6, double p7, double p8, double p9, double p10, double p11, double p12, double p13, double p14, double p15)

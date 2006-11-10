@@ -45,20 +45,6 @@ extern "C"
       return obj;
    }
 
-   // Constructor wrapper.
-   SHARPPY_API gmtl::Point2i* gmtl_Point_int_2__Point__int_int_int3(const int p0, const int p1, const int p2)
-   {
-      gmtl::Point2i* obj = new gmtl::Point2i(p0, p1, p2);
-      return obj;
-   }
-
-   // Constructor wrapper.
-   SHARPPY_API gmtl::Point2i* gmtl_Point_int_2__Point__int_int_int_int4(const int p0, const int p1, const int p2, const int p3)
-   {
-      gmtl::Point2i* obj = new gmtl::Point2i(p0, p1, p2, p3);
-      return obj;
-   }
-
    SHARPPY_API void delete_gmtl_Point2i(gmtl::Point2i* self_)
    {
       delete self_;

@@ -35,38 +35,11 @@ extern "C"
       delete self_;
    }
 
-   // Wrapper for non-virtual method gmtl::Matrix<float,3,3>::set()
-   SHARPPY_API void gmtl_Matrix_float_3_3__set__float_float_float_float4(gmtl::Matrix33f* self_, float p0, float p1, float p2, float p3)
-   {
-      self_->set(p0, p1, p2, p3);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<float,3,3>::set()
-   SHARPPY_API void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float6(gmtl::Matrix33f* self_, float p0, float p1, float p2, float p3, float p4, float p5)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5);
-   }
-
 
    // Wrapper for non-virtual method gmtl::Matrix<float,3,3>::set()
    SHARPPY_API void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float9(gmtl::Matrix33f* self_, float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8)
    {
       self_->set(p0, p1, p2, p3, p4, p5, p6, p7, p8);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<float,3,3>::set()
-   SHARPPY_API void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float12(gmtl::Matrix33f* self_, float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11);
-   }
-
-
-   // Wrapper for non-virtual method gmtl::Matrix<float,3,3>::set()
-   SHARPPY_API void gmtl_Matrix_float_3_3__set__float_float_float_float_float_float_float_float_float_float_float_float_float_float_float_float16(gmtl::Matrix33f* self_, float p0, float p1, float p2, float p3, float p4, float p5, float p6, float p7, float p8, float p9, float p10, float p11, float p12, float p13, float p14, float p15)
-   {
-      self_->set(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15);
    }
 
 

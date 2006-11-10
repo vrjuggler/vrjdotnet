@@ -68,24 +68,6 @@ public class VecBase_float_2
       mWeOwnMemory = true;
    }
 
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_float_2__VecBase__float_float_float3(float p0, float p1, float p2);
-
-   public VecBase_float_2(float p0, float p1, float p2)
-   {
-      mRawObject   = gmtl_VecBase_float_2__VecBase__float_float_float3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_VecBase_float_2__VecBase__float_float_float_float4(float p0, float p1, float p2, float p3);
-
-   public VecBase_float_2(float p0, float p1, float p2, float p3)
-   {
-      mRawObject   = gmtl_VecBase_float_2__VecBase__float_float_float_float4(p0, p1, p2, p3);
-      mWeOwnMemory = true;
-   }
-
    // Internal constructor needed for marshaling purposes.
    internal VecBase_float_2(IntPtr instPtr, bool ownMemory)
    {
@@ -121,16 +103,6 @@ public class VecBase_float_2
       gmtl_VecBase_float_2__set__float1(mRawObject, p0);
    }
 
-/*
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_2__set__float1(IntPtr obj,
-	float p0);
-
-   public  void set(float p0)
-   {
-      gmtl_VecBase_float_2__set__float1(mRawObject, p0);
-   }
-*/
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static void gmtl_VecBase_float_2__set__float_float2(IntPtr obj,
@@ -140,31 +112,6 @@ public class VecBase_float_2
    public  void set(float p0, float p1)
    {
       gmtl_VecBase_float_2__set__float_float2(mRawObject, p0, p1);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_2__set__float_float_float3(IntPtr obj,
-	float p0,
-	float p1,
-	float p2);
-
-   public  void set(float p0, float p1, float p2)
-   {
-      gmtl_VecBase_float_2__set__float_float_float3(mRawObject, p0, p1, p2);
-   }
-
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static void gmtl_VecBase_float_2__set__float_float_float_float4(IntPtr obj,
-	float p0,
-	float p1,
-	float p2,
-	float p3);
-
-   public  void set(float p0, float p1, float p2, float p3)
-   {
-      gmtl_VecBase_float_2__set__float_float_float_float4(mRawObject, p0, p1, p2, p3);
    }
 
 

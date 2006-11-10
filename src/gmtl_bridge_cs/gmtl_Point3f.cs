@@ -55,32 +55,12 @@ public sealed class Point3f
    }
 
    [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_float_3__Point__float_float2(float p0, float p1);
-
-   public Point3f(float p0, float p1)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_float_3__Point__float_float2(p0, p1);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
    private extern static IntPtr gmtl_Point_float_3__Point__float_float_float3(float p0, float p1, float p2);
 
    public Point3f(float p0, float p1, float p2)
       : base(new NoInitTag())   // Do not initialize mRawObject in base class
    {
       mRawObject   = gmtl_Point_float_3__Point__float_float_float3(p0, p1, p2);
-      mWeOwnMemory = true;
-   }
-
-   [DllImport("gmtl_bridge", CharSet = CharSet.Ansi)]
-   private extern static IntPtr gmtl_Point_float_3__Point__float_float_float_float4(float p0, float p1, float p2, float p3);
-
-   public Point3f(float p0, float p1, float p2, float p3)
-      : base(new NoInitTag())   // Do not initialize mRawObject in base class
-   {
-      mRawObject   = gmtl_Point_float_3__Point__float_float_float_float4(p0, p1, p2, p3);
       mWeOwnMemory = true;
    }
 
