@@ -2,10 +2,6 @@
 # Distributed under the GNU Lesser General Public License 2.1.  (See
 # accompanying file COPYING.txt or http://www.gnu.org/copyleft/lesser.txt)
 
-# File:          $RCSfile$
-# Date modified: $Date$
-# Version:       $Revision$
-
 AC_INIT([VRJ.NET], [0.0], [vrjuggler-devel@lists.sourceforge.net])
 AC_PREREQ([2.53])
 AC_COPYRIGHT([VRJ.NET is (C) Copyright 2004 by Patrick Hartling])

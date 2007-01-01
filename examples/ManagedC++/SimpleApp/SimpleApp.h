@@ -2,10 +2,6 @@
 // Distributed under the GNU Lesser General Public License 2.1.  (See
 // accompanying file COPYING.txt or http://www.gnu.org/copyleft/lesser.txt)
 
-// File:          $RCSfile$
-// Date modified: $Date$
-// Version:       $Revision$
-
 #ifndef _SIMPLE_MANAGED_CXX_APP_H_
 #define _SIMPLE_MANAGED_CXX_APP_H_
 

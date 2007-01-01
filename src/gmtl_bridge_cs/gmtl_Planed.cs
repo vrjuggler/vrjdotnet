@@ -2,10 +2,6 @@
 // VRJ.NET is (C) Copyright 2004 by Patrick Hartling
 // Distributed under the GNU Lesser General Public License 2.1.  (See
 // accompanying file COPYING.txt or http://www.gnu.org/copyleft/lesser.txt)
-
-// File:          $RCSfile$
-// Date modified: $Date$
-// Version:       $Revision$
 #endregion License
 
 // Generated from Revision: 1.79 of RCSfile: class_cs.tmpl,v
